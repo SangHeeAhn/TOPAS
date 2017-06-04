@@ -1,0 +1,197 @@
+i:Ts/NumberofThreads = 8
+#s:Gr/ViewA/Type  = "OpenGL"
+#b:Ts/PauseBeforeQuit = "True"
+#b:Ts/PauseBeforeSequence = "True"
+
+
+# 150kVp Spectrum#
+s:So/Example/BeamEnergySpectrumType = "Continuous"
+dv:So/Example/BeamEnergySpectrumValues = 150 1.000000 2.000000 3.000000 4.000000 5.000000 6.000000 7.000000 8.000000 9.000000 10.000000 11.000000 12.000000 13.000000 14.000000 15.000000 16.000000 17.000000 18.000000 19.000000 20.000000 21.000000 22.000000 23.000000 24.000000 25.000000 26.000000 27.000000 28.000000 29.000000 30.000000 31.000000 32.000000 33.000000 34.000000 35.000000 36.000000 37.000000 38.000000 39.000000 40.000000 41.000000 42.000000 43.000000 44.000000 45.000000 46.000000 47.000000 48.000000 49.000000 50.000000 51.000000 52.000000 53.000000 54.000000 55.000000 56.000000 57.000000 58.000000 59.000000 60.000000 61.000000 62.000000 63.000000 64.000000 65.000000 66.000000 67.000000 68.000000 69.000000 70.000000 71.000000 72.000000 73.000000 74.000000 75.000000 76.000000 77.000000 78.000000 79.000000 80.000000 81.000000 82.000000 83.000000 84.000000 85.000000 86.000000 87.000000 88.000000 89.000000 90.000000 91.000000 92.000000 93.000000 94.000000 95.000000 96.000000 97.000000 98.000000 99.000000 100.000000 101.000000 102.000000 103.000000 104.000000 105.000000 106.000000 107.000000 108.000000 109.000000 110.000000 111.000000 112.000000 113.000000 114.000000 115.000000 116.000000 117.000000 118.000000 119.000000 120.000000 121.000000 122.000000 123.000000 124.000000 125.000000 126.000000 127.000000 128.000000 129.000000 130.000000 131.000000 132.000000 133.000000 134.000000 135.000000 136.000000 137.000000 138.000000 139.000000 140.000000 141.000000 142.000000 143.000000 144.000000 145.000000 146.000000 147.000000 148.000000 149.000000 150.000000 keV
+uv:So/Example/BeamEnergySpectrumWeights = 150 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000403 0.000894 0.001649 0.002667 0.003897 0.005296 0.006772 0.008266 0.009685 0.011009 0.012125 0.013184 0.014073 0.014829 0.015416 0.015851 0.016191 0.016418 0.016570 0.016645 0.016626 0.016551 0.016437 0.016286 0.016078 0.015851 0.015605 0.015340 0.015075 0.014773 0.014470 0.014186 0.013884 0.013562 0.013259 0.012957 0.012654 0.012352 0.012049 0.011765 0.011481 0.011198 0.010914 0.044829 0.069797 0.010138 0.009874 0.009628 0.009382 0.009155 0.008928 0.008701 0.027994 0.008266 0.013146 0.007131 0.006980 0.006828 0.006677 0.006545 0.006393 0.006261 0.006110 0.005977 0.005845 0.005712 0.005580 0.005466 0.005334 0.005202 0.005088 0.004975 0.004861 0.004748 0.004634 0.004521 0.004407 0.004313 0.004199 0.004105 0.004010 0.003897 0.003802 0.003707 0.003613 0.003518 0.003443 0.003348 0.003253 0.003178 0.003102 0.003008 0.002932 0.002856 0.002781 0.002705 0.002629 0.002554 0.002478 0.002402 0.002327 0.002251 0.002194 0.002118 0.002062 0.001986 0.001929 0.001857 0.001794 0.001730 0.001667 0.001606 0.001544 0.001484 0.001424 0.001364 0.001304 0.001246 0.001186 0.001128 0.001071 0.001012 0.000954 0.000897 0.000838 0.000780 0.000723 0.000660 0.000597 0.000536 0.000475 0.000415 0.000356 0.000235 0.000116 0.000000
+
+
+s:Ge/BeamPosition/Parant = "World"
+s:Ge/BeamPosition/Type = "Group"
+d:Ge/BeamPosition/TransX = 0. m
+d:Ge/BeamPosition/TransY = 0. m
+d:Ge/BeamPosition/TransZ = 2.0 um
+d:Ge/BeamPosition/RotX = 180. deg
+d:Ge/BeamPosition/RotY = 0. deg
+d:Ge/BeamPosition/RotZ = 0. deg 
+ 
+
+s:So/Example/Type                     = "Beam"
+s:So/Example/Component               = "BeamPosition"
+s:So/Example/BeamParticle             = "gamma"
+u:So/Example/BeamEnergySpread         = 0.0
+s:So/Example/BeamPositionDistribution = "Flat"
+s:So/Example/BeamPositionCutoffShape  = "Ellipse"
+#s:So/Example/BeamPositionCutoffShape  = "Rectangle"
+d:So/Example/BeamPositionCutoffX      = 25 nm
+d:So/Example/BeamPositionCutoffY      = 25 nm
+d:So/Example/BeamPositionSpreadX      = 25 nm
+d:So/Example/BeamPositionSpreadY      = 25 nm
+s:So/Example/BeamAngularDistribution  = "Flat"
+d:So/Example/BeamAngularCutoffX       = 0.03 deg
+d:So/Example/BeamAngularCutoffY       = 0.03 deg
+d:So/Example/BeamAngularSpreadX       = 0.0032 rad
+d:So/Example/BeamAngularSpreadY       = 0.0032 rad
+i:So/Example/NumberOfHistoriesInRun   = 10000000
+i:Ts/ShowHistoryCountAtInterval = 1000000
+
+# Physics List #
+s:Ph/Default/Type= "Geant4_Modular"
+sv:Ph/Default/Modules = 1 "g4em-penelope"
+#sv:Ph/Default/Modules = 1 "g4em-livermore"
+#sv:Ph/Default/Modules = 1 "g4em-dna" 
+#s:Ph/Default/DNAModelName = "opt4" # Default is "opt0"
+#sv:Ph/Default/Modules = 2 "g4em-penelope" "g4em-dna" 
+
+# Start with a physics list
+#sv:Ph/Default/Modules = 6 "g4em-penelope" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
+# Set the regions where g4em-penelope is switch to g4-dna (opt1)
+#sv:Ph/Default/ActiveG4DNAInRegionsNamed = 1 "target"
+#s:Ph/Default/DNAModelName = "opt1" # Default is "opt0"
+
+#d:Ph/Default/EMRangeMin = 250. eV
+d:Ph/Default/CutForAllParticles = 1.0 nm
+d:Ge/Default/MaxStepSize = 1.0 nm
+#b:Ph/Default/PIXE = "True"
+b:Ph/Default/Auger = "True"
+b:Ts/ShowCPUTime = "True"
+
+
+
+## Visualization ##
+#b:Ts/PauseBeforeSequence="True"
+#b:Ts/PauseBeforeQuit = "True"
+#s:Gr/ViewA/Type = "OpenGL"
+#i:Gr/ViewA/WindowSizeX = 600 
+#i:Gr/ViewA/WindowSizeY = 600
+#d:Gr/ViewA/Theta = 90 deg
+#d:Gr/ViewA/Phi = 0 deg
+#s:Gr/ViewA/Projection = "Orthogonal"
+#s:Gr/ViewA/Projection = "Perspective"
+#d:Gr/ViewA/PerspectiveAngle = 20 deg
+u:Gr/ViewA/Zoom = 5000.
+b:Gr/ViewA/HiddenLineRemovalForTrajectories = "True"
+
+#b:Gr/ViewA/IncludeAxes   = "true"
+#s:Gr/ViewA/AxesComponent = "Phantom"
+#d:Gr/ViewA/AxesSize      = 15 cm
+
+
+#sv:Gr/OnlyIncludeParticlesFromVolume = 1 "GNP_1"
+#sv:Gr/OnlyIncludeParticlesFromProcess = 1 "annihil"
+#sv:Gr/OnlyIncludeParticlesNamed = 1 "e-"
+
+
+
+
+d:Ge/World/HLX      = 4 um
+d:Ge/World/HLY      = 4 um
+d:Ge/World/HLZ      = 4 um
+s:Ge/World/Material = "G4_AIR"
+s:Ge/World/Color    = "blue"
+
+
+########################################################################
+
+## Water Phantom Box##
+s:Ge/Phantom/Parent="World"
+s:Ge/Phantom/Type= "TsBox"
+s:Ge/Phantom/Material= "G4_WATER"
+d:Ge/Phantom/HLX= 2.0 um
+d:Ge/Phantom/HLY= 2.0 um
+d:Ge/Phantom/HLZ= 2.0 um
+d:Ge/Phantom/TransX=0. m
+d:Ge/Phantom/TransY=0. m
+d:Ge/Phantom/TransZ=0. m
+d:Ge/Phantom/RotX=0. deg
+d:Ge/Phantom/RotY=0. deg
+d:Ge/Phantom/RotZ=0. deg
+
+#s:Sc/Scoring/Quantity  = "MyNanoDump"
+#s:Sc/Scoring/Component = "GNP_1"
+#s:Sc/Scoring/IfOutputFileAlreadyExists   = "Overwrite"
+
+
+s:Sc/Phantom_Soring/Quantity = "EnergyDeposit"
+#s:Sc/Phantom_Soring/Quantity = "DoseToMedium"
+i:Sc/Phantom_Soring/XBins=1
+i:Sc/Phantom_Soring/YBins=1
+i:Sc/Phantom_Soring/ZBins=1
+s:Sc/Phantom_Soring/OutputType= "csv"
+s:Sc/Phantom_Soring/Component = "Phantom"
+s:Sc/Phantom_Soring/OutputFile=  "./Result/Phantom"
+b:Sc/Phantom_Soring/OutputToConsole ="False"
+s:Sc/Phantom_Soring/IfOutputFileAlreadyExists = "Overwrite"
+
+#s:Ge/GNP_1/Material = "G4_WATER" ### Material ###
+s:Ge/GNP_1/Material = "G4_Au" ### Material ###
+
+
+########################################################
+# GNP size #
+d:Ge/GNP_1/RMax = 25.0 nm  ### nano size ###
+
+#######################################################
+
+#GNP center postion#
+d:Ge/GNP_1/TransX =  0 cm
+d:Ge/GNP_1/TransY =  0 cm
+d:Ge/GNP_1/TransZ =  0 cm
+
+
+# GNP_1 # center
+s:Ge/GNP_1/Type = "TsSphere"
+s:Ge/GNP_1/Parent = "Phantom"
+d:Ge/GNP_1/RotX=0. deg
+d:Ge/GNP_1/RotY=0. deg
+d:Ge/GNP_1/RotZ=0. deg
+d:Ge/GNP_1/RMin = 0. mm
+d:Ge/GNP_1/SPhi = 0 deg
+d:Ge/GNP_1/DPhi = 360 deg
+d:Ge/GNP_1/STheta = 0 deg
+d:Ge/GNP_1/DTheta = 180 deg
+s:Ge/GNP_1/DrawingStyle = "solid"
+s:Ge/GNP_1/Color = "yellow"
+
+
+## Dose GNP_1_SD ##
+s:Sc/GNP_1_Soring/Quantity = "EnergyDeposit"
+#s:Sc/GNP_1_Soring/Quantity = "DoseToMedium"
+i:Sc/GNP_1_Soring/RBins=1
+i:Sc/GNP_1_Soring/PhiBins=1
+i:Sc/GNP_1_Soring/ZBins=1
+s:Sc/GNP_1_Soring/OutputType= "csv"
+s:Sc/GNP_1_Soring/Component = "GNP_1"
+s:Sc/GNP_1_Soring/OutputFile=  "./Result/GNP_1"
+b:Sc/GNP_1_Soring/OutputToConsole ="False"
+s:Sc/GNP_1_Soring/IfOutputFileAlreadyExists = "Overwrite"
+
+
+s:Sc/PhaseSpaceAtVacFilm/Quantity                    = "PhaseSpace"
+b:Sc/PhaseSpaceAtVacFilm/OutputToConsole             = "True"
+s:Sc/PhaseSpaceAtVacFilm/Surface                     = "GNP_1/OuterCurvedSurface"
+s:Sc/PhaseSpaceAtVacFilm/OutputType                  = "ASCII" # ASCII, Binary, Limited or ROOT
+s:Sc/PhaseSpaceAtVacFilm/OutputFile                  = "GNP_Surface"
+i:Sc/PhaseSpaceAtVacFilm/OutputBufferSize            = 1000
+#s:Sc/PhaseSpaceAtVacFilm/OnlyIncludeParticlesGoing  = "In"
+b:Sc/PhaseSpaceAtVacFilm/IncludeTOPASTime            = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeTimeOfFlight         = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeRunID                = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeEventID              = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeTrackID              = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeParentID             = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeCreatorProcess       = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeVertexInfo           = "True"
+b:Sc/PhaseSpaceAtVacFilm/IncludeSeed                 = "True"
+#sv:Sc/PhaseSpaceAtVacFilm/OnlyIncludeParticlesNamed = 1 "e-"
+s:Sc/PhaseSpaceAtVacFilm/IfOutputFileAlreadyExists   = "Overwrite"
+s:Sc/PhaseSpaceAtVacFilm/OnlyIncludeParticlesOfGeneration   = "Secondary"
+
+
+
+
+
